@@ -117,5 +117,7 @@ sonar {
         property 'sonar.projectKey', 'reto-tecnico-datepicker'
         property 'sonar.projectName', 'Reto Técnico SQA - HU-001 Datepicker'
         property 'sonar.sourceEncoding', 'UTF-8'
+        // El proyecto es en sí una automatización de pruebas: no lleva pruebas unitarias propias, así que no se mide cobertura.
+        property 'sonar.coverage.exclusions', '**/*'
     }
 }

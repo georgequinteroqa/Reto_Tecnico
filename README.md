@@ -7,6 +7,10 @@ Automatización web de la historia de usuario **HU-001** sobre el calendario eme
 
 Los casos de prueba se priorizaron con el formato oficial de SQA (hoja «Prioridad de nuevas automatizaciones»): [`docs/matriz-priorizacion`](docs/matriz-priorizacion). Se seleccionaron CP-003 y CP-005 (puntaje 0,82, prioridad Alta).
 
+## Documento de entendimiento
+
+Alcance, enfoque, riesgos, estrategia y estimación (55 horas) en el formato oficial de SQA: [`docs/documento-entendimiento`](docs/documento-entendimiento).
+
 ## Escenarios automatizados
 
 | Feature | Escenario | Criterios de aceptación cubiertos |
@@ -89,7 +93,7 @@ gradlew.bat clean test -Denvironment=qa                         :: otro ambiente
 
 ## Análisis estático (SonarQube)
 
-El informe del análisis está en [`docs/sonarqube`](docs/sonarqube). Para repetirlo con un servidor SonarQube:
+El informe del análisis está en [`docs/sonarqube`](docs/sonarqube): puerta de calidad aprobada, sin incidencias. La cobertura no se mide porque el proyecto es en sí una automatización de pruebas (`sonar.coverage.exclusions`). Para repetirlo con un servidor SonarQube:
 
 ```bat
 gradlew.bat sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.token=<token>
