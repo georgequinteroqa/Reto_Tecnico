@@ -1,0 +1,18 @@
+# Gradle y compilación
+.gradle/
+build/
+target/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+out/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# SonarQube
+.scannerwork/
