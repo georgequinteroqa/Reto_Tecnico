@@ -1,0 +1,25 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Informe SonarQube</title>
+<style>
+body{font-family:"Segoe UI",Arial,sans-serif;color:#1f2933;font-size:10.5pt;margin:0}
+h1{color:#1f3a93;font-size:18pt;margin:0 0 4px}h2{color:#1f3a93;font-size:13pt;margin:18px 0 6px;border-bottom:2px solid #1f3a93;padding-bottom:3px}
+.sub{color:#5b6470;margin-bottom:12px}table{border-collapse:collapse;width:100%;margin:6px 0}th,td{border:1px solid #d5dde7;padding:5px 8px;text-align:left}
+th{background:#eef2fa;color:#1f3a93}.ok{display:inline-block;background:#e6f4ec;color:#1d7a46;font-weight:700;padding:4px 10px;border-radius:4px}
+img{max-width:100%;border:1px solid #d5dde7;border-radius:4px}p{margin:4px 0 8px}
+</style></head><body>
+<h1>Informe de análisis estático · SonarQube</h1>
+<div class="sub">Proyecto: Reto Técnico SQA - HU-001 Datepicker (reto-tecnico-datepicker) · SonarQube Community 26.10.0.133078 · 22/11/2026</div>
+<p><span class="ok">Puerta de calidad APROBADA</span></p>
+<h2>Resultados</h2>
+<table><tr><th>Indicador</th><th>Resultado</th></tr><tr><td>Puerta de calidad (Quality Gate)</td><td>APROBADA</td></tr><tr><td>Errores (Bugs) · Confiabilidad</td><td>0 · A</td></tr><tr><td>Vulnerabilidades · Seguridad</td><td>0 · A</td></tr><tr><td>Puntos críticos de seguridad (Hotspots)</td><td>0 · A</td></tr><tr><td>Code smells · Mantenibilidad</td><td>0 · A</td></tr><tr><td>Deuda técnica</td><td>0 min</td></tr><tr><td>Duplicación</td><td>0.0 %</td></tr><tr><td>Líneas de código</td><td>414</td></tr><tr><td>Archivos · Clases · Métodos</td><td>20 · 20 · 47</td></tr><tr><td>Complejidad cognitiva</td><td>8</td></tr><tr><td>Densidad de comentarios</td><td>23.2 %</td></tr><tr><td>Incidencias abiertas</td><td>0</td></tr></table>
+<h2>Condiciones de la puerta de calidad</h2><table><tr><th>Métrica</th><th>Umbral</th><th>Valor</th><th>Estado</th></tr><tr><td>new_coverage</td><td>menor que 80</td><td>0.0</td><td>Cumple</td></tr><tr><td>new_duplicated_lines_density</td><td>mayor que 3</td><td>0.0</td><td>Cumple</td></tr><tr><td>new_violations</td><td>mayor que 0</td><td>0</td><td>Cumple</td></tr></table>
+<h2>Observaciones</h2>
+<ul>
+<li>Se analizó el código fuente de la automatización (<code>src/main/java</code> y <code>src/test/java</code>) con la regla de calidad por defecto (Sonar way) para Java.</li>
+<li>En un primer análisis aparecieron 2 errores de confiabilidad (posible NullPointerException al leer el atributo <code>class</code> de un elemento). Se corrigieron con <code>WebElementFacade.hasClass(...)</code> y el análisis final quedó sin incidencias.</li>
+<li>La cobertura es 0 % porque el proyecto es una automatización de pruebas web: no hay pruebas unitarias sobre el propio código de la automatización. La puerta de calidad aplica las condiciones de cobertura solo al código nuevo.</li>
+</ul>
+<h2>Tablero</h2>
+<img src="captura-tablero-sonarqube.png">
+<h2>Cómo repetir el análisis</h2>
+<p><code>gradlew.bat sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.token=&lt;token&gt;</code></p>
+</body></html>

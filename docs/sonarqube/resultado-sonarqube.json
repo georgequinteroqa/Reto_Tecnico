@@ -1,0 +1,136 @@
+{
+  "gate": {
+    "projectStatus": {
+      "status": "OK",
+      "conditions": [
+        {
+          "status": "OK",
+          "metricKey": "new_coverage",
+          "comparator": "LT",
+          "errorThreshold": "80",
+          "actualValue": "0.0"
+        },
+        {
+          "status": "OK",
+          "metricKey": "new_duplicated_lines_density",
+          "comparator": "GT",
+          "errorThreshold": "3",
+          "actualValue": "0.0"
+        },
+        {
+          "status": "OK",
+          "metricKey": "new_violations",
+          "comparator": "GT",
+          "errorThreshold": "0",
+          "actualValue": "0"
+        }
+      ],
+      "ignoredConditions": true,
+      "period": {
+        "mode": "PREVIOUS_VERSION",
+        "date": "2026-11-22T19:06:56-05:00"
+      },
+      "caycStatus": "compliant"
+    }
+  },
+  "medidas": {
+    "component": {
+      "key": "reto-tecnico-datepicker",
+      "name": "Reto Técnico SQA - HU-001 Datepicker",
+      "qualifier": "TRK",
+      "measures": [
+        {
+          "metric": "reliability_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "code_smells",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "duplicated_lines_density",
+          "value": "0.0",
+          "bestValue": true
+        },
+        {
+          "metric": "functions",
+          "value": "47"
+        },
+        {
+          "metric": "security_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "classes",
+          "value": "20"
+        },
+        {
+          "metric": "comment_lines_density",
+          "value": "23.2",
+          "bestValue": false
+        },
+        {
+          "metric": "security_hotspots",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "security_review_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_index",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "sqale_rating",
+          "value": "1.0",
+          "bestValue": true
+        },
+        {
+          "metric": "bugs",
+          "value": "0",
+          "bestValue": true
+        },
+        {
+          "metric": "cognitive_complexity",
+          "value": "8",
+          "bestValue": false
+        },
+        {
+          "metric": "ncloc",
+          "value": "414"
+        },
+        {
+          "metric": "files",
+          "value": "20"
+        },
+        {
+          "metric": "vulnerabilities",
+          "value": "0",
+          "bestValue": true
+        }
+      ]
+    }
+  },
+  "issues": {
+    "total": 0,
+    "p": 1,
+    "ps": 100,
+    "paging": {
+      "pageIndex": 1,
+      "pageSize": 100,
+      "total": 0
+    },
+    "effortTotal": 0,
+    "issues": [],
+    "components": [],
+    "facets": []
+  },
+  "version": "26.10.0.133078"
+}
