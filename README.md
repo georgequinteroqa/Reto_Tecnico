@@ -3,6 +3,10 @@
 Automatización web de la historia de usuario **HU-001** sobre el calendario emergente de
 [jQuery UI Datepicker](https://jqueryui.com/datepicker/), con el patrón **Screenplay** de Serenity BDD.
 
+## Priorización
+
+Los casos de prueba se priorizaron con el formato oficial de SQA (hoja «Prioridad de nuevas automatizaciones»): [`docs/matriz-priorizacion`](docs/matriz-priorizacion). Se seleccionaron CP-003 y CP-005 (puntaje 0,82, prioridad Alta).
+
 ## Escenarios automatizados
 
 | Feature | Escenario | Criterios de aceptación cubiertos |
